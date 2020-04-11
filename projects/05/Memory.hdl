@@ -1,0 +1,56 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/05/Memory.hdl
+
+/**
+ * The complete address space of the Hack computer's memory,
+ * including RAM and memory-mapped I/O. 
+ * The chip facilitates read and write operations, as follows:
+ *     Read:  out(t) = Memory[address(t)](t)
+ *     Write: if load(t-1) then Memory[address(t-1)](t) = in(t-1)
+ * In words: the chip always outputs the value stored at the memory 
+ * location specified by address. If load==1, the in value is loaded 
+ * into the memory location specified by address. This value becomes 
+ * available through the out output from the next time step onward.
+ * Address space rules:
+ * Only the upper 16K+8K+1 words of the Memory chip are used. 
+ * Access to address>0x6000 is invalid. Access to any address in 
+ * the range 0x4000-0x5FFF results in accessing the screen memory 
+ * map. Access to address 0x6000 results in accessing the keyboard 
+ * memory map. The behavior in these addresses is described in the 
+ * Screen and Keyboard chip specifications given in the book.
+ */
+
+CHIP Memory {
+    IN in[16], load, address[15];
+    OUT out[16];
+
+    PARTS:
+    // Put your code here:
+     DMux4Way(in=load, sel=address[13..14], a=aram, b=bram, c=screen, d=keyboard);
+
+    Or(a=aram, b=bram, out=ram);
+    RAM16K(in=in, load=ram, address=address[0..13], out=ramOut);
+
+    Screen(in=in, load=screen, address=address[0..12], out=screenOut);
+
+    Keyboard(out=keyboardOut);
+
+    Mux4Way16(a=ramOut, b=ramOut, c=screenOut, d=keyboardOut, sel=address[13..14], out=out);
+
+    //DMux(in=load, sel=address[14], a=a1, b=b1);
+
+    //RAM16K(in=in, load=a1, address=address[0..13], out=out16k);
+    
+    //DMux4Way(in=b1,sel=address[12..13],a=a2,b=b2,c=c2,d=d2);
+    
+    //RAM4K(in=in, load=a2,address=address[0..11],out=screen1);
+    //RAM4K(in=in, load=b2,address=address[0..11],out=screen2);
+    //Mux16(a=screen1,b=screen2,sel=address[12],out=screen);
+
+    //Register(in=in, load=c2, out=keyboard);
+    //Mux16(a=screen, b=keyboard, sel=address[13], out=io);
+
+    //Mux16(a=out16k,b=io,sel=address[14], out=out);
+}

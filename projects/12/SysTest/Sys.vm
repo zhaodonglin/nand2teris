@@ -1,0 +1,746 @@
+function Sys.init 0
+call Math.init 0
+pop temp 0
+call Memory.init 0
+pop temp 0
+call Screen.init 0
+pop temp 0
+call Keyboard.init 0
+pop temp 0
+call Output.init 0
+pop temp 0
+call Main.main 0
+pop temp 0
+push constant 0
+return
+function Sys.halt 0
+push constant 4
+call String.new 1
+push constant 72
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 76
+call String.appendChar 2
+push constant 84
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 0
+return
+function Sys.wait 1
+label WHILE_EXP0
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+label WHILE_EXP1
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END1
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP1
+label WHILE_END1
+label WHILE_EXP2
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END2
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP2
+label WHILE_END2
+label WHILE_EXP3
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END3
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP3
+label WHILE_END3
+label WHILE_EXP4
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END4
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP4
+label WHILE_END4
+label WHILE_EXP5
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END5
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP5
+label WHILE_END5
+label WHILE_EXP6
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END6
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP6
+label WHILE_END6
+label WHILE_EXP7
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END7
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP7
+label WHILE_END7
+label WHILE_EXP8
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END8
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP8
+label WHILE_END8
+label WHILE_EXP9
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END9
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP9
+label WHILE_END9
+label WHILE_EXP10
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END10
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP10
+label WHILE_END10
+label WHILE_EXP11
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END11
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP11
+label WHILE_END11
+label WHILE_EXP12
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END12
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP12
+label WHILE_END12
+label WHILE_EXP13
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END13
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP13
+label WHILE_END13
+label WHILE_EXP14
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END14
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP14
+label WHILE_END14
+label WHILE_EXP15
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END15
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP15
+label WHILE_END15
+label WHILE_EXP16
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END16
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP16
+label WHILE_END16
+label WHILE_EXP17
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END17
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP17
+label WHILE_END17
+label WHILE_EXP18
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END18
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP18
+label WHILE_END18
+label WHILE_EXP19
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END19
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP19
+label WHILE_END19
+label WHILE_EXP20
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END20
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP20
+label WHILE_END20
+label WHILE_EXP21
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END21
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP21
+label WHILE_END21
+label WHILE_EXP22
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END22
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP22
+label WHILE_END22
+label WHILE_EXP23
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END23
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP23
+label WHILE_END23
+label WHILE_EXP24
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END24
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP24
+label WHILE_END24
+label WHILE_EXP25
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END25
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP25
+label WHILE_END25
+label WHILE_EXP26
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END26
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP26
+label WHILE_END26
+label WHILE_EXP27
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END27
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP27
+label WHILE_END27
+label WHILE_EXP28
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END28
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP28
+label WHILE_END28
+label WHILE_EXP29
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END29
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP29
+label WHILE_END29
+label WHILE_EXP30
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END30
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP30
+label WHILE_END30
+label WHILE_EXP31
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END31
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP31
+label WHILE_END31
+label WHILE_EXP32
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END32
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP32
+label WHILE_END32
+label WHILE_EXP33
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END33
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP33
+label WHILE_END33
+label WHILE_EXP34
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END34
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP34
+label WHILE_END34
+label WHILE_EXP35
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END35
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP35
+label WHILE_END35
+label WHILE_EXP36
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END36
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP36
+label WHILE_END36
+label WHILE_EXP37
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END37
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP37
+label WHILE_END37
+label WHILE_EXP38
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END38
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP38
+label WHILE_END38
+label WHILE_EXP39
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END39
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP39
+label WHILE_END39
+label WHILE_EXP40
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END40
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP40
+label WHILE_END40
+label WHILE_EXP41
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END41
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP41
+label WHILE_END41
+label WHILE_EXP42
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END42
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP42
+label WHILE_END42
+label WHILE_EXP43
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END43
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP43
+label WHILE_END43
+label WHILE_EXP44
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END44
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP44
+label WHILE_END44
+label WHILE_EXP45
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END45
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP45
+label WHILE_END45
+label WHILE_EXP46
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END46
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP46
+label WHILE_END46
+label WHILE_EXP47
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END47
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP47
+label WHILE_END47
+label WHILE_EXP48
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END48
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP48
+label WHILE_END48
+label WHILE_EXP49
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END49
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP49
+label WHILE_END49
+label WHILE_EXP50
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END50
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP50
+label WHILE_END50
+label WHILE_EXP51
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END51
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP51
+label WHILE_END51
+label WHILE_EXP52
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END52
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP52
+label WHILE_END52
+label WHILE_EXP53
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END53
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP53
+label WHILE_END53
+label WHILE_EXP54
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END54
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP54
+label WHILE_END54
+label WHILE_EXP55
+push local 0
+push constant 20000
+lt
+not
+if-goto WHILE_END55
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP55
+label WHILE_END55
+push constant 4
+call String.new 1
+push constant 87
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 73
+call String.appendChar 2
+push constant 84
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 0
+return
+function Sys.error 1
+push constant 16
+call String.new 1
+pop local 0
+push local 0
+push argument 0
+call String.setInt 2
+pop temp 0
+push constant 6
+call String.new 1
+push constant 69
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push local 0
+call Output.printString 1
+pop temp 0
+push constant 0
+return
